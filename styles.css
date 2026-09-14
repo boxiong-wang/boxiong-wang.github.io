@@ -77,13 +77,11 @@ nav a {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background-image:
-    url("https://raw.githubusercontent.com/boxiong-wang/boxiong-wang.github.io/main/assets/boxiong-wang-hero-background.jpg"),
-    url("https://raw.githubusercontent.com/boxiong-wang/boxiong-wang.github.io/main/assets/boxiong-wang-hero-background.heic");
-  background-size: cover, cover;
-  background-position: center 38%, center 38%;
+  background-image: url("https://raw.githubusercontent.com/boxiong-wang/boxiong-wang.github.io/main/assets/boxiong-wang-hero-background.jpg");
+  background-size: cover;
+  background-position: center 38%;
   background-repeat: no-repeat;
-  background-attachment: fixed, fixed;
+  background-attachment: fixed;
   opacity: .30;
   transform: scale(1.02);
 }
@@ -262,8 +260,8 @@ h1 {
 
 @media (max-width: 780px) {
   .profile-shell::before {
-    background-attachment: scroll, scroll;
-    background-position: center top, center top;
+    background-attachment: scroll;
+    background-position: center top;
   }
   .profile {
     grid-template-columns: 106px minmax(0, 1fr);
