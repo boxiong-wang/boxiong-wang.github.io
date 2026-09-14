@@ -47,6 +47,7 @@ a:hover { color: var(--accent); }
 nav a,
 .section-label,
 .paper-meta,
+.abstract-toggle summary,
 .profile-links,
 .contact-link,
 .footer {
@@ -238,6 +239,41 @@ h1 {
   max-width: 850px;
   color: var(--muted);
   font-size: .94rem;
+}
+
+.abstract-toggle {
+  margin-top: 9px;
+  max-width: 850px;
+}
+
+.abstract-toggle summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  list-style: none;
+  color: var(--accent);
+  font-size: .79rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  user-select: none;
+}
+
+.abstract-toggle summary::-webkit-details-marker { display: none; }
+.abstract-toggle summary::after {
+  content: "+";
+  font-size: .92rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.abstract-toggle[open] summary::after { content: "−"; }
+
+.abstract-toggle p {
+  margin: 10px 0 0;
+  max-width: 850px;
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.58;
 }
 
 .contact-section {
