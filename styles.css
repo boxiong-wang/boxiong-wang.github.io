@@ -75,36 +75,39 @@ nav a {
 .profile-shell::before {
   content: "";
   position: absolute;
-  top: -170px;
-  right: 0;
-  bottom: -90px;
+  top: 0;
   left: 0;
+  right: 0;
+  height: 350px;
   z-index: -2;
   background-image: url("https://raw.githubusercontent.com/boxiong-wang/boxiong-wang.github.io/main/assets/boxiong-wang-hero-background.jpg");
-  background-size: cover;
-  background-position: center top;
+  background-size: 100% auto;
+  background-position: center -155px;
   background-repeat: no-repeat;
-  opacity: .68;
-  transform: scale(1.035);
+  opacity: .82;
 }
 
 .profile-shell::after {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 360px;
   z-index: -1;
   background: linear-gradient(
     to bottom,
-    rgba(255,255,255,.01) 0%,
-    rgba(255,255,255,.04) 58%,
-    rgba(255,255,255,.30) 76%,
-    rgba(255,255,255,.78) 90%,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.08) 38%,
+    rgba(255,255,255,.34) 58%,
+    rgba(255,255,255,.78) 76%,
+    #ffffff 94%,
     #ffffff 100%
   );
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 76%, #000 91%, #000 100%);
-  mask-image: linear-gradient(to bottom, transparent 0%, transparent 76%, #000 91%, #000 100%);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 55%, #000 82%, #000 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, transparent 55%, #000 82%, #000 100%);
 }
 
 .profile {
@@ -112,7 +115,7 @@ nav a {
   grid-template-columns: 126px minmax(0, 1fr);
   gap: 26px;
   align-items: start;
-  padding: 285px 0 66px;
+  padding: 245px 0 34px;
 }
 
 .profile-photo {
@@ -127,8 +130,8 @@ nav a {
 
 .profile-copy {
   min-width: 0;
-  padding-top: 8px;
-  text-shadow: 0 1px 8px rgba(255,255,255,.72);
+  padding-top: 2px;
+  text-shadow: none;
 }
 
 h1 {
@@ -148,7 +151,7 @@ h1 {
 .intro {
   margin: 9px 0 0;
   max-width: 780px;
-  color: #404040;
+  color: #4f4f4f;
   font-size: .92rem;
   line-height: 1.48;
 }
@@ -311,17 +314,17 @@ h1 {
 
 @media (max-width: 780px) {
   .profile-shell::before {
-    top: -105px;
-    bottom: -60px;
-    background-position: center top;
+    height: 285px;
+    background-size: auto 340px;
+    background-position: center -80px;
   }
+  .profile-shell::after { height: 300px; }
   .profile {
     grid-template-columns: 106px minmax(0, 1fr);
     gap: 20px;
-    padding: 185px 0 46px;
+    padding: 205px 0 32px;
   }
   .profile-photo { width: 106px; }
-  .profile-copy { padding-top: 5px; }
   .contact-section {
     grid-template-columns: 1fr;
     gap: 8px;
@@ -333,21 +336,23 @@ h1 {
   .nav-wrap { min-height: 50px; }
   nav { gap: 14px; }
   .profile-shell::before {
-    top: -70px;
-    bottom: -40px;
+    height: 240px;
+    background-size: auto 290px;
+    background-position: center -62px;
   }
+  .profile-shell::after { height: 250px; }
   .profile {
     grid-template-columns: 84px minmax(0, 1fr);
     gap: 15px;
     align-items: start;
-    padding: 138px 0 34px;
+    padding: 166px 0 28px;
   }
   .profile-photo { width: 84px; }
   h1 { font-size: 1.72rem; }
   .role { font-size: .88rem; margin-top: 6px; }
   .intro {
     grid-column: 1 / -1;
-    margin-top: 8px;
+    margin-top: 10px;
     font-size: .9rem;
   }
   .profile-links {
