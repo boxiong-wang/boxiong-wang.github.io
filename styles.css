@@ -79,10 +79,10 @@ nav a {
   z-index: -2;
   background-image: url("https://raw.githubusercontent.com/boxiong-wang/boxiong-wang.github.io/main/assets/boxiong-wang-hero-background.jpg");
   background-size: cover;
-  background-position: center 38%;
+  background-position: center 30%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity: .42;
+  opacity: .58;
   transform: scale(1.02);
 }
 
@@ -93,11 +93,16 @@ nav a {
   z-index: -1;
   background: linear-gradient(
     to bottom,
-    rgba(255,255,255,.36) 0%,
-    rgba(255,255,255,.48) 50%,
-    rgba(255,255,255,.82) 80%,
+    rgba(255,255,255,.10) 0%,
+    rgba(255,255,255,.18) 48%,
+    rgba(255,255,255,.48) 72%,
+    rgba(255,255,255,.86) 90%,
     #ffffff 100%
   );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 68%, #000 88%, #000 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, transparent 68%, #000 88%, #000 100%);
 }
 
 .profile {
@@ -105,7 +110,7 @@ nav a {
   grid-template-columns: 126px minmax(0, 1fr);
   gap: 26px;
   align-items: center;
-  padding: 20px 0 24px;
+  padding: 112px 0 42px;
 }
 
 .profile-photo {
@@ -301,12 +306,12 @@ h1 {
 @media (max-width: 780px) {
   .profile-shell::before {
     background-attachment: scroll;
-    background-position: center top;
+    background-position: center 20%;
   }
   .profile {
     grid-template-columns: 106px minmax(0, 1fr);
     gap: 20px;
-    padding: 20px 0 22px;
+    padding: 82px 0 34px;
   }
   .profile-photo { width: 106px; }
   .contact-section {
@@ -323,7 +328,7 @@ h1 {
     grid-template-columns: 84px minmax(0, 1fr);
     gap: 15px;
     align-items: start;
-    padding: 18px 0 20px;
+    padding: 66px 0 28px;
   }
   .profile-photo { width: 84px; }
   h1 { font-size: 1.72rem; }
