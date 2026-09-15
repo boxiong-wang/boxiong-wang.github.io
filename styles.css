@@ -301,6 +301,20 @@ h1 {
   line-height: 1.58;
 }
 
+.conference-presentations {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.conference-presentations > p:last-child {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
 .contact-section {
   display: grid;
   grid-template-columns: 150px minmax(0, 1fr);
@@ -377,4 +391,6 @@ h1 {
   .research-theme { padding-top: 23px; }
   .research-theme > h3 { font-size: 1.42rem; }
   .paper-title { font-size: 1.13rem; }
+  .conference-presentations { margin-top: 20px; padding-top: 20px; }
+  .conference-presentations > p:last-child { font-size: .86rem; }
 }
