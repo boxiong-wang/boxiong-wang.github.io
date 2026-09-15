@@ -333,8 +333,22 @@ h1 {
   color: var(--muted);
 }
 
+.closing-quote {
+  padding: 34px 0 6px;
+  background: #ffffff;
+  text-align: right;
+}
+
+.closing-quote p {
+  margin: 0;
+  color: #5a5a5a;
+  font-size: .86rem;
+  font-style: italic;
+  letter-spacing: .005em;
+}
+
 .footer {
-  padding: 24px 0 36px;
+  padding: 28px 0 36px;
   background: #ffffff;
   color: var(--muted);
   font-size: .78rem;
@@ -402,4 +416,6 @@ h1 {
   .paper-title { font-size: 1.13rem; }
   .conference-presentations { margin-top: 20px; padding-top: 20px; }
   .conference-presentations > p:last-child { font-size: .86rem; }
+  .closing-quote { padding-top: 28px; }
+  .closing-quote p { font-size: .82rem; }
 }
