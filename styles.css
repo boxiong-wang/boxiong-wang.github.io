@@ -47,6 +47,7 @@ nav a,
 .section-label,
 .paper-meta,
 .abstract-toggle summary,
+.research-fields,
 .profile-links,
 .contact-link,
 .footer {
@@ -156,8 +157,16 @@ h1 {
   line-height: 1.48;
 }
 
+.research-fields {
+  margin: 11px 0 0;
+  color: #555555;
+  font-size: .80rem;
+  line-height: 1.45;
+  letter-spacing: .005em;
+}
+
 .profile-links {
-  margin: 9px 0 0;
+  margin: 8px 0 0;
   font-size: .82rem;
 }
 .profile-links a,
@@ -354,6 +363,11 @@ h1 {
     grid-column: 1 / -1;
     margin-top: 10px;
     font-size: .9rem;
+  }
+  .research-fields {
+    grid-column: 1 / -1;
+    margin-top: 6px;
+    font-size: .76rem;
   }
   .profile-links {
     grid-column: 1 / -1;
