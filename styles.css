@@ -152,7 +152,7 @@ h1 {
 }
 
 .intro {
-  margin: 9px 0 0;
+  margin: 11px 0 0;
   max-width: 780px;
   color: #4f4f4f;
   font-size: .92rem;
@@ -161,7 +161,7 @@ h1 {
 
 .research-fields {
   margin: 11px 0 0;
-  color: #555555;
+  color: #303030;
   font-size: .80rem;
   line-height: 1.45;
   letter-spacing: .005em;
@@ -378,11 +378,6 @@ h1 {
   .profile-photo { width: 84px; }
   h1 { font-size: 1.72rem; }
   .role { font-size: .88rem; margin-top: 6px; }
-  .intro {
-    grid-column: 1 / -1;
-    margin-top: 10px;
-    font-size: .9rem;
-  }
   .research-fields {
     grid-column: 1 / -1;
     margin-top: 6px;
@@ -391,6 +386,11 @@ h1 {
   .profile-links {
     grid-column: 1 / -1;
     margin-top: 0;
+  }
+  .intro {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    font-size: .9rem;
   }
   .research { padding: 24px 0 34px; }
   .research-header h2 { font-size: .78rem; }
