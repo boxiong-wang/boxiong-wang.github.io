@@ -33,7 +33,7 @@ a:hover { color: var(--accent); }
   right: 0;
   z-index: 30;
   color: #ffffff;
-  background: linear-gradient(to bottom, rgba(0,0,0,.28), rgba(0,0,0,0));
+  background: transparent;
   border-bottom: 1px solid transparent;
   transition: background .24s ease, border-color .24s ease, color .24s ease, box-shadow .24s ease;
 }
@@ -75,15 +75,15 @@ nav a,
   font-size: .9rem;
   font-weight: 700;
   letter-spacing: .055em;
-  text-shadow: 0 1px 8px rgba(0,0,0,.28);
+  text-shadow: 0 1px 8px rgba(0,0,0,.34);
 }
 
 nav { display: flex; gap: 24px; }
 nav a {
   font-size: .86rem;
   color: inherit;
-  opacity: .94;
-  text-shadow: 0 1px 8px rgba(0,0,0,.28);
+  opacity: .96;
+  text-shadow: 0 1px 8px rgba(0,0,0,.34);
 }
 
 .site-header.scrolled .brand,
@@ -99,7 +99,7 @@ nav a {
   align-items: flex-end;
   overflow: hidden;
   isolation: isolate;
-  background: #dfe5e7;
+  background: #ffffff;
 }
 
 .hero::before {
@@ -108,8 +108,8 @@ nav a {
   inset: 0;
   z-index: -2;
   background-image: url("https://raw.githubusercontent.com/boxiong-wang/boxiong-wang.github.io/main/assets/boxiong-wang-hero-background.jpg");
-  background-size: cover;
-  background-position: center center;
+  background-size: 100% auto;
+  background-position: center -42px;
   background-repeat: no-repeat;
 }
 
@@ -119,15 +119,15 @@ nav a {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 26vh;
-  min-height: 170px;
+  height: 30vh;
+  min-height: 190px;
   z-index: -1;
   background: linear-gradient(
     to bottom,
     rgba(255,255,255,0) 0%,
-    rgba(255,255,255,.08) 20%,
-    rgba(255,255,255,.42) 55%,
-    rgba(255,255,255,.86) 82%,
+    rgba(255,255,255,.12) 18%,
+    rgba(255,255,255,.52) 52%,
+    rgba(255,255,255,.9) 82%,
     #ffffff 100%
   );
 }
@@ -425,7 +425,10 @@ h1 {
 }
 
 @media (max-width: 780px) {
-  .hero::before { background-position: center center; }
+  .hero::before {
+    background-size: 100% auto;
+    background-position: center -26px;
+  }
   .hero-content { padding-bottom: 30px; }
   .about-section { padding: 50px 0 42px; }
   .profile {
@@ -450,11 +453,12 @@ h1 {
     min-height: 92svh;
   }
   .hero::before {
-    background-position: center center;
+    background-size: 100% auto;
+    background-position: center -14px;
   }
   .hero::after {
-    height: 30vh;
-    min-height: 190px;
+    height: 34vh;
+    min-height: 210px;
   }
   .hero-bottom {
     align-items: flex-start;
