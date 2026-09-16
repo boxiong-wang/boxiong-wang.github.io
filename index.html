@@ -11,7 +11,7 @@
   <meta property="og:description" content="PhD Candidate in Economics at Victoria University of Wellington. Research on shocks, adaptation, institutional capacity, information, measurement, and regulation.">
   <meta property="og:url" content="https://boxiongwang.com/">
   <title>Boxiong Wang | Economics</title>
-  <link rel="stylesheet" href="styles.css?v=20260915o">
+  <link rel="stylesheet" href="styles.css?v=20260916a">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,10 +32,11 @@
   </script>
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <div class="wrap nav-wrap">
       <a class="brand" href="#top">BOXIONG WANG</a>
       <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -43,9 +44,18 @@
   </header>
 
   <main id="top">
-    <section class="profile-shell">
+    <section class="hero" aria-label="Victoria University of Wellington campus">
+      <div class="hero-content">
+        <div class="wrap hero-bottom">
+          <p class="hero-meta">PhD Candidate in Economics · Victoria University of Wellington</p>
+          <a class="hero-scroll" href="#about">About</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
       <div class="profile wrap">
-        <img class="profile-photo" src="assets/boxiong-wang-profile.PNG?v=20260914c" alt="Portrait of Boxiong Wang" loading="eager" decoding="async">
+        <img class="profile-photo" src="assets/boxiong-wang-profile.PNG?v=20260914c" alt="Portrait of Boxiong Wang" loading="lazy" decoding="async">
         <div class="profile-copy">
           <h1>Boxiong Wang</h1>
           <p class="role">PhD Candidate in Economics<br>Victoria University of Wellington</p>
@@ -124,5 +134,12 @@
   <footer class="wrap footer">
     <p>© 2026 Boxiong Wang</p>
   </footer>
+
+  <script>
+    const header = document.getElementById('site-header');
+    const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 36);
+    updateHeader();
+    window.addEventListener('scroll', updateHeader, { passive: true });
+  </script>
 </body>
 </html>
