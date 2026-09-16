@@ -383,25 +383,34 @@ h1 {
 }
 
 .closing-quote {
-  padding: 34px 0 6px;
-  background: #ffffff;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 34px max(22px, calc((100% - var(--max)) / 2)) 6px;
+  background: #171717;
+  border-top: 1px solid #2a2a2a;
   text-align: right;
 }
 
 .closing-quote p {
   margin: 0;
-  color: #5a5a5a;
+  color: #d0d0d0;
   font-size: .86rem;
   font-style: italic;
   letter-spacing: .005em;
 }
 
 .footer {
-  padding: 28px 0 36px;
-  background: #ffffff;
-  color: var(--muted);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 28px max(22px, calc((100% - var(--max)) / 2)) 36px;
+  background: #171717;
+  color: #a8a8a8;
   font-size: .78rem;
 }
+
+.footer p { margin: 0; }
 
 @media (max-width: 780px) {
   .hero-content { padding-bottom: 16px; }
@@ -468,6 +477,11 @@ h1 {
   .paper-title { font-size: 1.13rem; }
   .conference-presentations { margin-top: 20px; padding-top: 20px; }
   .conference-presentations > p:last-child { font-size: .86rem; }
-  .closing-quote { padding-top: 28px; }
+  .closing-quote {
+    padding: 28px 14px 6px;
+  }
   .closing-quote p { font-size: .82rem; }
+  .footer {
+    padding: 24px 14px 32px;
+  }
 }
